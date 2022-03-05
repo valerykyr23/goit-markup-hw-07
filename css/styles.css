@@ -45,8 +45,12 @@ img {
   list-style-type: none;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .current::after {
-  content: '';
+  content: "";
   width: 100%;
   background-color: var(--accent-color);
   height: 4px;
@@ -174,8 +178,8 @@ body {
 
 /* Оформление надписи логотипа в хэдере и футэре*/
 
-.footer-logo-link,
-.header-logo-link {
+.logo-link-footer,
+.logo-link-header {
   font-family: Raleway, serif;
   font-weight: 700;
   font-size: 26px;
@@ -184,21 +188,25 @@ body {
   text-decoration: none;
 }
 
-.header-logo-link {
+.logo-link-header {
   color: var(--title-text-color);
   padding-top: 24px;
   padding-bottom: 25px;
   display: inline-block;
   margin-right: 93px;
 }
-.footer-logo-link {
+.logo-link-footer {
   color: var(--main-background-color);
   display: inline-block;
   margin-bottom: 20px;
 }
 
 /* Делает слово  web в логотипе голубым */
-.logo-web {
+.logo-link-header__word--accent {
+  color: var(--accent-color);
+}
+
+.logo-link-footer__word--accent {
   color: var(--accent-color);
 }
 
@@ -209,7 +217,11 @@ body {
   margin-right: auto;
   max-width: 1600px;
   height: 600px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url(../images/hero-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -258,9 +270,10 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.header-container {
+.container--flex {
   display: flex;
 }
+
 .header-connect {
   display: flex;
   margin-left: auto;
@@ -282,27 +295,31 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.site-nav__link {
+  color: var(--title-text-color);
+}
+
 .navigation {
   display: flex;
   align-items: center;
 }
 
-.site-nav .item + .item {
+.site-nav .site-nav__item + .site-nav__item {
   margin-left: 50px;
 }
 
-.site-nav .link {
+.site-nav__link {
   padding-top: 32px;
   padding-bottom: 32px;
   display: inline-block;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .site-nav__link:hover,
+.site-nav .site-nav__link:focus {
   color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.site-nav .site-nav__link.current {
   color: var(--accent-color);
   position: relative;
 }
