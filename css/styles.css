@@ -713,7 +713,7 @@ body {
   background-color: var(--dark-background);
 }
 
-.footer-logo-link {
+.logo-link-footer {
   color: var(--main-background-color);
   text-decoration-line: none;
 }
