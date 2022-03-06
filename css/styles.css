@@ -506,7 +506,7 @@ body {
   align-items: center;
 }
 
-.teamplayers-socials-link {
+.teamplayers__link--socials {
   width: 44px;
   height: 44px;
   background-color: var(--main-background-color);
@@ -519,15 +519,15 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.teamplayers__socials-list {
+.teamplayers__list--socials {
   display: flex;
   justify-content: center;
 }
-.teamplayers__socials-item + .teamplayers-socials-item {
+.teamplayers__item--socials + .teamplayers__item--socials {
   margin-left: 10px;
 }
 
-.teamplayers__socials-icon {
+.teamplayers__icon--socials {
   fill: #afb1b8;
 
   transition-property: fill;
@@ -535,14 +535,14 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.teamplayers__socials-link:hover,
-.teamplayers__socials-link:focus {
+.teamplayers__link--socials:hover,
+.teamplayers__link--socials:focus {
   background-color: var(--accent-color);
   cursor: pointer;
 }
 
-.teamplayers__socials-link:hover .teamplayers-socials-icon,
-.teamplayers__socials-link:focus .teamplayers-socials-icon {
+.teamplayers__link--socials:hover .teamplayers__icon--socials,
+.teamplayers__link--socials:focus .teamplayers__icon--socials {
   fill: var(--main-background-color);
 }
 
