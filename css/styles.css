@@ -152,7 +152,7 @@ img {
 
 /* Скрытый заголовок */
 
-.hidden-title {
+.features__title--hidden {
   display: none;
 }
 
@@ -407,11 +407,11 @@ body {
 
 /* Секция преимущества на странице студии */
 
-.feature-list {
+.features__list {
   display: flex;
 }
 
-.feature-title {
+.features__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -421,14 +421,14 @@ body {
   margin-bottom: 10px;
 }
 
-.feature-description {
+.features__description {
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
 
-.feature-list-item {
+.features__item {
   margin-right: 30px;
   width: 270px;
   display: flex;
@@ -436,35 +436,35 @@ body {
   align-content: center;
 }
 
-.feature-list-item:nth-child(4n) {
+.features__item:nth-child(4n) {
   margin-right: 0;
 }
 
 /* Секция Чем мы занимаемся на странице студии */
 
-.section-work {
+.work {
   background-color: var(--main-background-color);
   padding-top: 0;
   text-align: center;
 }
 
-.work-photo-list {
+.work__list {
   display: flex;
 }
 
-.work-photo-item {
+.work__item {
   margin-right: 30px;
   position: relative;
 }
 
-.img-work,
-.img-team,
+.work__img,
+.teamplayers__img,
 .img-project {
   width: 100%;
   height: auto;
 }
 
-.work-photo-item:nth-child(3n) {
+.work__item:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -479,7 +479,7 @@ body {
   align-items: center;
 }
 
-.work-toptext {
+.work__toptext {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -490,7 +490,7 @@ body {
 
 /* Секция Наша команда на странице студии */
 
-.section-team {
+.teamplayers {
   background-color: var(--tertiary-white-background);
   text-align: center;
 }
@@ -519,15 +519,15 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.teamplayers-socials-list {
+.teamplayers__socials-list {
   display: flex;
   justify-content: center;
 }
-.teamplayers-socials-item + .teamplayers-socials-item {
+.teamplayers__socials-item + .teamplayers-socials-item {
   margin-left: 10px;
 }
 
-.teamplayers-socials-icon {
+.teamplayers__socials-icon {
   fill: #afb1b8;
 
   transition-property: fill;
@@ -535,14 +535,14 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.teamplayers-socials-link:hover,
-.teamplayers-socials-link:focus {
+.teamplayers__socials-link:hover,
+.teamplayers__socials-link:focus {
   background-color: var(--accent-color);
   cursor: pointer;
 }
 
-.teamplayers-socials-link:hover .teamplayers-socials-icon,
-.teamplayers-socials-link:focus .teamplayers-socials-icon {
+.teamplayers__socials-link:hover .teamplayers-socials-icon,
+.teamplayers__socials-link:focus .teamplayers-socials-icon {
   fill: var(--main-background-color);
 }
 
@@ -551,7 +551,7 @@ body {
   padding-bottom: 30px;
 }
 
-.card-item {
+.teamplayers__item {
   border-radius: 0px 0px 4px 4px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -559,15 +559,15 @@ body {
   margin-right: 30px;
 }
 
-.card-item:nth-child(4n) {
+.teamplayers__item:nth-child(4n) {
   margin-right: 0;
 }
 
-.card-list {
+.teamplayers__list {
   display: flex;
 }
 
-.teamplayer-name {
+.teamplayer__name {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -576,7 +576,7 @@ body {
   margin-bottom: 10px;
 }
 
-.teamplayer-position {
+.teamplayer__position {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.19;
