@@ -718,7 +718,6 @@ body {
   text-decoration-line: none;
 }
 
-
 /* Оформление контактов  в футэре */
 
 .footer__link--white {
@@ -778,14 +777,13 @@ body {
 .footer__list {
   display: flex;
   justify-content: center;
-  
 }
 
 .footer__item + .footer__item {
   margin-left: 10px;
 }
 
-.footer__icon--socials
+.footer__icon--socials {
   fill: var(--main-background-color);
 }
 
