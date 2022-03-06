@@ -660,7 +660,7 @@ body {
 
 /* Секция Наши клиенты на странице студии */
 
-.clients-website-link {
+.clients__link {
   width: 170px;
   height: 92px;
   background-color: var(--main-background-color);
@@ -676,16 +676,16 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   justify-content: center;
 }
 
-.clients-list-item + .clients-list-item {
+.clients__item + .clients__item {
   margin-left: 30px;
 }
 
-.clients-logo-icon {
+.clients__icon {
   fill: #afb1b8;
 
   transition-property: fill;
@@ -693,17 +693,17 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-website-link:hover .clients-logo-icon,
-.clients-website-link:focus .clients-logo-icon {
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon {
   fill: var(--accent-color);
 }
 
-.clients-website-link:hover,
-.clients-website-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   border-color: var(--accent-color);
 }
 
-.section-clients {
+.clients {
   text-align: center;
 }
 
