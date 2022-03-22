@@ -118,7 +118,7 @@ img {
   padding: 40px;
 }
 
-.modal-close-button {
+.modal__close-button {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -140,8 +140,8 @@ img {
   pointer-events: none;
 }
 
-.modal-close-button .close-icon:hover,
-.modal-close-button .close-icon:focus {
+.modal__close-button .close-icon:hover,
+.modal__close-button .close-icon:focus {
   fill: var(--accent-color);
 }
 
@@ -835,7 +835,7 @@ textarea {
   padding: 12px 16px;
 }
 
-.title-modal-form {
+.modal__form-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -889,7 +889,7 @@ textarea {
   border: none;
 }
 
-.modal-submit-btn {
+.modal__submit-btn {
   font-family: inherit;
   color: var(--main-background-color);
   background-color: var(--accent-color);
