@@ -463,7 +463,7 @@ body {
 
 .work__img,
 .teamplayers__img,
-.portfolio-cardset__image {
+.portfolio-project__image {
   width: 100%;
   height: auto;
 }
@@ -590,17 +590,17 @@ body {
 
 /* Секция с фотографиями проектов на странице портфолио */
 
-.portfolio-cardset {
+.portfolio-project {
   display: flex;
   flex-wrap: wrap;
 }
 
-.project-example {
+rename somehow .project-example {
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
 }
 
-.portfolio-cardset__link {
+.portfolio-project__link {
   display: block;
   cursor: pointer;
 
@@ -609,21 +609,21 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-cardset__item {
+.portfolio-project__item {
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.portfolio-cardset__link:hover {
+.portfolio-project__link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-cardset__item:nth-child(3n) {
+.portfolio-project__item:nth-child(3n) {
   margin-right: 0;
 }
 
-.project-title {
+.portfolio-project__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -631,7 +631,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-.project-type {
+.portfolio-project__type {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.8;
@@ -642,11 +642,11 @@ body {
   position: relative;
   overflow: hidden;
 }
-.portfolio-cardset__link:hover .portfolio-cardset__toptext {
+.portfolio-project__link:hover .portfolio-project__toptext {
   transform: translateY(0);
 }
 
-.portfolio-cardset__toptext {
+.portfolio-project__toptext {
   position: absolute;
   top: 0;
   left: 0;
