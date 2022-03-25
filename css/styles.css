@@ -64,7 +64,7 @@ img {
   border-radius: 2px;
 }
 
-.modal__chekbox--visually-hidden {
+.modal__checkbox--visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -880,11 +880,11 @@ textarea {
   fill: transparent;
 }
 
-.modal__chekbox:checked + .modal__agreement svg {
+.modal__checkbox:checked + .modal__agreement svg {
   fill: var(--main-background-color);
 }
 
-.modal__chekbox:checked + .modal__agreement .modal__check {
+.modal__checkbox:checked + .modal__agreement .modal__check {
   background-color: var(--accent-color);
   border: none;
 }
@@ -942,7 +942,7 @@ textarea {
   justify-content: center;
 }
 
-.check {
+.modal__check {
   display: flex;
   justify-content: center;
   align-items: center;
