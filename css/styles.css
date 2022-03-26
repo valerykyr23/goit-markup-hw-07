@@ -182,8 +182,7 @@ body {
 
 /* Оформление надписи логотипа в хэдере и футэре*/
 
-.logo-link-footer,
-.logo-link-header {
+.logo {
   font-family: Raleway, serif;
   font-weight: 700;
   font-size: 26px;
@@ -192,25 +191,21 @@ body {
   text-decoration: none;
 }
 
-.logo-link-header {
+.logo--black {
   color: var(--title-text-color);
   padding-top: 24px;
   padding-bottom: 25px;
   display: inline-block;
   margin-right: 93px;
 }
-.logo-link-footer {
+.logo--white {
   color: var(--main-background-color);
   display: inline-block;
   margin-bottom: 20px;
 }
 
 /* Делает слово  web в логотипе голубым */
-.logo-link-header__word--accent {
-  color: var(--accent-color);
-}
-
-.logo-link-footer__word--accent {
+.logo--accent {
   color: var(--accent-color);
 }
 
@@ -269,7 +264,7 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.container--flex {
+.header__container {
   display: flex;
 }
 
@@ -325,14 +320,7 @@ body {
 
 /* Оформление контактов в хєдєре */
 
-.header-connect__icon--mail,
-.header-connect__icon--tel {
-  fill: var(--primary-text-color);
-  margin-right: 10px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-connect__list {
+.contacts {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -340,26 +328,33 @@ body {
   display: flex;
 }
 
-.header-connect__list .header-connect__item + .header-connect__item {
+.contact-info__icon--mail,
+.contact-info__icon--tel {
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-info .contact-info__item + .contact-info__item {
   margin-left: 50px;
 }
 
-.header-connect__link:hover,
-.header-connect__link:focus {
+.contact-info__link:hover,
+.contact-info__link:focus {
   color: var(--accent-color);
 }
 
-.header-connect__link:hover .contact-info-icon-mail,
-.header-connect__link:focus .contact-info-icon-mail {
+.contact-info__link:hover .contact-info__icon--mail,
+.contact-info__link:focus .contact-info__icon--mail {
   fill: var(--accent-color);
 }
 
-.header-connect__link:hover .contact-info-icon-tel,
-.header-connect__link:focus .contact-info-icon-tel {
+.contact-info__link:hover .contact-info__icon--tel,
+.contact-info__link:focus .contact-info__icon--tel {
   fill: var(--accent-color);
 }
 
-.header-connect__link {
+.contact-info__link {
   color: var(--primary-text-color);
   text-decoration-line: none;
   padding-top: 32px;
