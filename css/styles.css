@@ -49,7 +49,7 @@ img {
   text-decoration: none;
 }
 
-.hidden-title {
+.hidden {
   display: none;
 }
 
@@ -406,7 +406,7 @@ body {
 
 /* Секция преимущества на странице студии */
 
-.features {
+.features__list {
   display: flex;
 }
 
@@ -467,7 +467,7 @@ body {
   margin-right: 0;
 }
 
-.toptext-container {
+.work__toptext-container {
   width: 370px;
   height: 70px;
   position: absolute;
@@ -494,7 +494,7 @@ body {
   text-align: center;
 }
 
-.thumb {
+.features__thumb {
   width: 270px;
   height: 120px;
   border-radius: 4px;
@@ -545,7 +545,7 @@ body {
   fill: var(--main-background-color);
 }
 
-.profile {
+.teamplayers__profile {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -792,7 +792,7 @@ rename somehow .project-example {
   background-color: var(--accent-color);
 }
 
-.footer-socials {
+.footer__socials {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -809,7 +809,7 @@ rename somehow .project-example {
   color: var(--main-background-color);
 }
 
-.footer-general-container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
