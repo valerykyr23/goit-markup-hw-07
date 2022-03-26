@@ -268,12 +268,6 @@ body {
   display: flex;
 }
 
-.header-connect {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
-}
-
 /* Главная навигация страницы */
 .site-nav {
   color: var(--title-text-color);
@@ -321,6 +315,12 @@ body {
 /* Оформление контактов в хєдєре */
 
 .contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.contact-info {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
