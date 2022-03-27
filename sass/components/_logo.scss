@@ -1,0 +1,25 @@
+.logo {
+  font-family: Raleway, serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo--black {
+  color: var(--title-text-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
+  display: inline-block;
+  margin-right: 93px;
+}
+.logo--white {
+  color: var(--main-background-color);
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.logo--accent {
+  color: var(--accent-color);
+}
