@@ -8,8 +8,8 @@
   display: flex;
 
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @extend %transition;
 }
 
 .site-nav__link {
@@ -29,14 +29,14 @@
   padding-top: 32px;
   padding-bottom: 32px;
   display: inline-block;
-}
 
-.site-nav .site-nav__link:hover,
-.site-nav .site-nav__link:focus {
-  color: var(--accent-color);
-}
+  .site-nav &:hover,
+  .site-nav &:focus {
+    color: var(--accent-color);
+  }
 
-.site-nav .site-nav__link.current {
-  color: var(--accent-color);
-  position: relative;
+  .site-nav &.current {
+    color: var(--accent-color);
+    position: relative;
+  }
 }

@@ -7,12 +7,12 @@
   transition: opacity 500ms, visibility 500ms;
 }
 
-.backdrop.backdrop--is-hidden .modal {
-  transform: scale(0.7);
-}
-
 .backdrop--is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.backdrop--is-hidden .modal {
+  transform: scale(0.7);
 }

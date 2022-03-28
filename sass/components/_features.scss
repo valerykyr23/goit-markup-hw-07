@@ -4,10 +4,8 @@
 
 .features__title {
   color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 14px;
+  @extend %font;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -25,11 +23,12 @@
   display: flex;
   flex-wrap: wrap;
   align-content: center;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
 }
 
-.features__item:nth-child(4n) {
-  margin-right: 0;
-}
 .features__title--hidden {
   display: none;
 }
@@ -40,7 +39,5 @@
   border-radius: 4px;
   background-color: var(--tertiary-white-background);
   margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-center;
 }
