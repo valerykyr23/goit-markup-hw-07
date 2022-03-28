@@ -4,17 +4,14 @@
 
 .features__title {
   color: var(--title-text-color);
-  @extend %font;
-  line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+  @include font(700, 14px, 1.14, 0.03em);
 }
 
 .features__description {
   color: var(--primary-text-color);
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  @include font(null, 14px, 1.7, 0.03em);
 }
 
 .features__item {

@@ -11,18 +11,14 @@
 .page-filter__button {
   font-family: inherit;
   color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
   border-radius: 4px;
   padding: 6px 22px;
   background-color: var(--tertiary-white-background);
   border-color: transparent;
   cursor: pointer;
-
   transition-property: background-color, color, box-shadow;
   @extend %transition;
+  @include font(500, 16px, 1.6, 0.03em);
 
   &:hover,
   &:focus {

@@ -8,16 +8,19 @@
   height: 44px;
   background-color: var(--main-background-color);
   border-radius: 50%;
-  @extend %flex-center;
-
   transition-property: background-color;
-
   @extend %transition;
+  @extend %flex-center;
 
   &:hover,
   &:focus {
     background-color: var(--accent-color);
     cursor: pointer;
+
+    &:hover .teamplayers__icon--socials,
+    &:focus .teamplayers__icon--socials {
+      fill: var(--main-background-color);
+    }
   }
 }
 
@@ -28,15 +31,8 @@
 
 .teamplayers__icon--socials {
   fill: #afb1b8;
-
   transition-property: fill;
-
   @extend %transition;
-
-  .teamplayers__link--socials:hover &,
-  .teamplayers__link--socials:focus & {
-    fill: var(--main-background-color);
-  }
 }
 
 .teamplayers__profile {
@@ -51,28 +47,27 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   margin-right: 30px;
 
-  & + & {
-    margin-left: 10px;
-  }
-
   &:nth-child(4n) {
     margin-right: 0;
   }
+}
+
+.teamplayers__item + .teamplayers__item {
+  margin-left: 10px;
 }
 
 .teamplayers__list {
   display: flex;
 }
 
-.teamplayer__name {
+.teamplayers__name {
   color: var(--title-text-color);
-  font-weight: 500;
   margin-bottom: 10px;
-  @extend %teamset;
+  @include font(500, 16px, 1.19, 0.03em);
 }
 
-.teamplayer__position {
+.teamplayers__position {
   color: var(--primary-text-color);
   margin-bottom: 16px;
-  @extend %teamset;
+  @include font(null, 16px, 1.19, 0.03em);
 }

@@ -11,7 +11,6 @@
 .portfolio-project__link {
   display: block;
   cursor: pointer;
-
   transition-property: box-shadow;
   @extend %transition;
 
@@ -32,17 +31,12 @@
 
 .portfolio-project__title {
   color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include font(700, 18px, 2, 0.06em);
 }
 
 .portfolio-project__type {
   color: var(--primary-text-color);
-  font-size: 16px;
-  line-height: 1.8;
-  letter-spacing: 0.03em;
+  @include font(null, 16px, 1.8, 0.03em);
 }
 
 .portfolio-project__wrap {
@@ -56,14 +50,11 @@
   left: 0;
   background-color: rgba(33, 150, 243, 0.9);
   color: var(--main-background-color);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.55;
-  letter-spacing: 0.03em;
   padding: 63px 24px;
   height: 100%;
   transform: translateY(101%);
   transition: transform 250ms linear;
+  @include font(400, 18px, 1.55, 0.03em);
 
   .portfolio-project__link:hover & {
     transform: translateY(0);

@@ -1,15 +1,10 @@
 .site-nav {
   color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   text-decoration: none;
   display: flex;
-
   transition-property: color;
-
   @extend %transition;
+  @include font(500, 14px, 1.14, 0.02em);
 }
 
 .site-nav__link {
@@ -34,9 +29,9 @@
   .site-nav &:focus {
     color: var(--accent-color);
   }
+}
 
-  .site-nav &.current {
-    color: var(--accent-color);
-    position: relative;
-  }
+.site-nav .site-nav__link.current {
+  color: var(--accent-color);
+  position: relative;
 }
