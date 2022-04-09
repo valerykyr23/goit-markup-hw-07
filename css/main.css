@@ -649,6 +649,11 @@ body {
   text-decoration-line: none;
 }
 
+.footer__section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .clients__link {
   width: 170px;
   height: 92px;
@@ -729,6 +734,18 @@ body {
   letter-spacing: 0.03em;
 }
 
+.teamplayers__item {
+  border-radius: 0px 0px 4px 4px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-right: 30px;
+  width: 270px;
+}
+
+.teamplayers__item:nth-child(4n) {
+  margin-right: 0;
+}
+
 .teamplayers {
   background-color: var(--tertiary-white-background);
   text-align: center;
@@ -768,17 +785,6 @@ body {
   padding-bottom: 30px;
 }
 
-.teamplayers__item {
-  border-radius: 0px 0px 4px 4px;
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  margin-right: 30px;
-}
-
-.teamplayers__item:nth-child(4n) {
-  margin-right: 0;
-}
-
 .teamplayers__item + .teamplayers__item {
   margin-left: 10px;
 }
@@ -812,6 +818,8 @@ body {
 .portfolio-project__description {
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 .portfolio-project__link {
@@ -831,6 +839,10 @@ body {
 
 .portfolio-project__item:nth-child(3n) {
   margin-right: 0;
+}
+
+.portfolio-project__item:nth-child(n+7) {
+  margin-bottom: 0;
 }
 
 .portfolio-project__title {
